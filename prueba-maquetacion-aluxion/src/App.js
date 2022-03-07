@@ -4,7 +4,9 @@ import Intro from './containers/intro/intro';
 
 function App() {
   return (
-    <Intro/>
+    <div className='app'>
+      <Intro/>
+    </div>
   );
 }
 

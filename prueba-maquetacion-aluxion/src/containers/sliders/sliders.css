@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/*font-family: 'Roboto Condensed', sans-serif;*/    
+
+.swiper-container{
+    margin-top: 30px;
+    scroll-snap-type: y mandatory;
+    height: 70vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
+
+.sections{
+    display: flex;
+    scroll-snap-align: start;
+    height: 70vh;
+}
+
+.sections img{
+    margin-left: 300px;
+    height: 70%;
+    width: 25%;
+}
+
+.slider-1 {
+    height: 70vh;
+    width: 100%;
+
+}
+
+.slider-2{
+    height: 70vh;
+    width: 100%;
+}
+
+.descrip{
+    margin-top: 50px;
+    width: 30%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.descrip h1{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    font-weight: 200px;
+}
+
+.descrip p{
+    color: rgb(88, 88, 88);
+}
+
+.p-descript{
+    margin-top: 35px;
+}
+
+
+
+/*button*/
+.divButton {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;    
+    top: 60%;
+    z-index: 1;
+}
+
+.divButton button{
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+}

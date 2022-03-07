@@ -5,64 +5,67 @@ import Swiper from "swiper";
 import "swiper/css/swiper.css";
 import { useState } from "react";
 
+//import component
+import { Sliders } from "../sliders/sliders";
+import { NavSlide } from "../navSlide/navSlide";
+import { MenuButton } from "../menu button/menuButton";
+
 const Intro = () => {
   let mySwiper: any = null;
 
   const [active, setActive] = useState(false);
 
-  useEffect(() => {
-    mySwiper = new Swiper(".swiper-container", {
-      speed: 1000,
-      direction: "vertical",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-      },
-    });
-  }, []);
 
   return (
     <IntroStyle>
       <div className={`header ${active ? "active" : ""}`}>
+        <div className="logo">
+          <a href="https://aluxion.com/#home" target="_blank">
+          <img src={logo} alt="logo Aluxion" className="logoAluxion" />
+          Aluxion
+            </a>
+        </div>
         <div className="header-menu" onClick={() => setActive(!active)}>
-          X
+          <MenuButton />
         </div>
       </div>
 
       <div className="App">
-        <div className="logo">
-          <img src={logo} alt="" />
-        </div>
         <div className="title">
-          <h1>FrontEnd Utils </h1>
+          {/* <h1>FrontEnd Utils </h1> */}
         </div>
         <div className="container-buttons">
-          <p>--- boiler ReactJS ---</p>
+          {/* <p>--- boiler ReactJS ---</p> */}
         </div>
 
-        <div className="slider-container">
-          <div className="swiper-container">
+         <div className="slider-container">
+         {/* <div className="swiper-container"> */}
+
             {/* <!-- Additional required wrapper --> */}
-            <div className="swiper-wrapper">
+
+            {/* <div className="swiper-wrapper"> */}
+
               {/* <!-- Slides --> */}
-              <div className="swiper-slide">Slide 1</div>
-              <div className="swiper-slide">Slide 2</div>
-            </div>
+              <Sliders />
+
+            {/* </div> */}
+
             {/* <!-- If we need pagination --> */}
+
             <div className="swiper-pagination"></div>
 
             {/* <!-- If we need scrollbar --> */}
+
             <div className="swiper-scrollbar"></div>
-          </div>
-        </div>
-      </div>
+           </div>
+        </div> 
+       {/* </div>  */}
+
       {/* <!-- If we need navigation buttons --> */}
-      <div className="swiper-button-prev"></div>
-      <div className="swiper-button-next"></div>
+      <NavSlide />
+      {/* <div className="swiper-button-prev"></div>
+      <div className="swiper-button-next"></div> */}
+
     </IntroStyle>
   );
 };

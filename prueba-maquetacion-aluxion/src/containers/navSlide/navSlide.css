@@ -1,0 +1,13 @@
+.nav-container{
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+}
+
+.navSlideOne{
+    margin-right: 50px;
+}
+
+.p-number{
+    color: rgb(116, 116, 116);
+}
