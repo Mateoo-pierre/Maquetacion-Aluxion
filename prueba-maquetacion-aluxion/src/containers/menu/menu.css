@@ -9,10 +9,12 @@
 
 .menu{
     position: absolute;
+    z-index: 0;
+    opacity: 0; /*cambiar en hover*/
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: black;
     color: white;
 }
@@ -43,25 +45,59 @@
 }
 
 
+.collect-container{
+    z-index: 5;
+    transition: 1s ease-in-out;
+    width: 150px;
+}
+
 .bg1{
     position: absolute;
-    margin-top: 15px;
-    color: rgba(255, 255, 255, 0.514);
+    color: rgba(255, 255, 255, 0.568);
     font-size: 13px;
     opacity: 0;
-    transform: translateY(-20%);
+    width: 350px;
+    transform: translateY(-60%);
     transition: 1s ease-in-out;
-    z-index: 10;
+}
+
+.bg1 li{
+    margin: 15px 0;
+    cursor: pointer;
 }
 
 
-.li1:hover ~ .bg1{
+.collect-container:hover > .bg1{
     opacity: 1;
-    transform: translateY(30%);
+    transform: translateY(0%);
     transition: 1s ease-in-out;
 }
 
-.li1:hover{
+.collect-container:hover{
     transition: 1s ease-in-out;
     margin-bottom: 100px;
+}
+
+.bg1-forniture{
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    mix-blend-mode: difference;
+    top: -50px;
+    left: 450px;
+    background: url(../../assets/images/files/Sofá\ blanco.png);
+    background-size: cover;
+    opacity: 0;
+    transform: translateY(15%);
+    transition: 1s ease-in-out;
+}
+
+.li-furniture:hover ~ .bg1-forniture{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: 1s ease-in-out;
+}
+
+.li-furniture:hover{
+    color: white;
 }
