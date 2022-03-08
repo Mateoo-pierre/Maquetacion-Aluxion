@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Sliders } from "../sliders/sliders";
 import { NavSlide } from "../navSlide/navSlide";
 import { MenuButton } from "../menu button/menuButton";
+import { Menu } from "../menu/menu";
 
 const Intro = () => {
   let mySwiper: any = null;
@@ -29,6 +30,8 @@ const Intro = () => {
           <MenuButton />
         </div>
       </div>
+          <Menu />
+      
 
       <div className="App">
         <div className="title">
