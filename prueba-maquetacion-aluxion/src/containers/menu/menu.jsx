@@ -3,10 +3,10 @@ import React from "react";
 //import css
 import './menu.css';
 
-export const Menu = () => {
+export const Menu = ({active}) => {
     return(
         <>  
-            <div className="menu">
+            <div className={`menu ${active ? 'open' : ''}`}>
                 <ul className="ul">
                     <div className="collect-container">
                         <li className="li1 li"><a href="#">Collection</a></li>

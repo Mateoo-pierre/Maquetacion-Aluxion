@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { logo } from "../../assets/images/images";
+import { logoBlack, logoWhite } from "../../assets/images/images";
 import { IntroStyle } from "./intro-style";
 import Swiper from "swiper";
 import "swiper/css/swiper.css";
@@ -22,7 +22,7 @@ const Intro = () => {
       <div className={`header ${active ? "active" : ""}`}>
         <div className="logo">
           <a href="https://aluxion.com/#home" target="_blank">
-          <img src={logo} alt="logo Aluxion" className="logoAluxion" />
+          <img src={active ? logoWhite: logoBlack} alt="logo Aluxion" className="logoAluxion" />
           Aluxion
             </a>
         </div>
@@ -30,7 +30,9 @@ const Intro = () => {
           <MenuButton />
         </div>
       </div>
-          <Menu />
+          <Menu 
+          active = {active}  
+         />
       
 
       <div className="App">
