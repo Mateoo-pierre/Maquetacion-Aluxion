@@ -90,6 +90,41 @@ export const SliderStyle = styled.div`
         }
     }
 
+
+    @media screen and (max-width : 1000px ) {
+
+        .swiper-container{
+            margin-top: 60px;
+        }
+    
+        .sections{
+            display: inline-block;
+            scroll-snap-align: start;
+            height: 70vh;
+        }
+    
+        .sections img{
+            top: 0;
+            margin-top: 0%;
+            margin-left: 0%;
+            height: 70%;
+            width: 90%;
+        }
+    
+        .descrip{
+            text-align: center;
+            margin-top: 0%;
+            margin-bottom: 20px;
+            width: 90%;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .slider-2{
+            margin-top: 40px;
+        }
+    }
+
+
     @media screen and (max-width : 380px){
 
         .swiper-container{
@@ -142,6 +177,27 @@ export const ButtonOne = styled.div`
             background-color: black;
             font-weight: 500;
         }
+    }
+
+
+    @media screen and (max-width : 1000px ) {
+
+        .divButton {
+            margin-top: 10px;
+            margin-left: -5%;
+            position: relative;   
+            top: -100px;
+        }
+        
+        .divButton button{
+            cursor: pointer;
+            padding: 10px 35%;
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            font-weight: 500;
+        }
+
     }
 
 

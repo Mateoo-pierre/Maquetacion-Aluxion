@@ -53,5 +53,14 @@ export const IntroStyle = styled.div`
     }
 
   }
+
+  @media screen and (max-width : 1000px){
+
+    .bodyIntro{ 
+      background: white;
+      margin-left: 5%;
+      height: 100vh;
+    }
+  }
   
 `;
