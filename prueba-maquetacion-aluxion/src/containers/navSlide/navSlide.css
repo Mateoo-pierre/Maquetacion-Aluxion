@@ -1,4 +1,4 @@
-.nav-container{
+/* .nav-container{
     display: flex;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
@@ -10,11 +10,15 @@
 
 .p-number{
     color: rgb(116, 116, 116);
-}
+} */
+
+
 
 /*responsive*/
 
-@media screen and (max-width : 700px ){
+
+
+/* @media screen and (max-width : 700px ){
     .nav-container{
         margin-left: -12%;
         justify-content: center;
@@ -22,11 +26,4 @@
         margin-top: 16%;
         height: 1px;
     }
-};
-
-@media screen and (max-width : 400px ){
-
-    .nav-container{
-    }
-
-}
+}; */
