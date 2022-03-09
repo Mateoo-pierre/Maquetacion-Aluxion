@@ -19,6 +19,7 @@ const Intro = () => {
 
   return (
     <IntroStyle>
+
       <div className="bodyIntro">
         <div className={`header ${active ? "active" : ""}`}>
           <div className="logo">
@@ -28,51 +29,28 @@ const Intro = () => {
               </a>
           </div>
           <div className="header-menu" onClick={() => setActive(!active)}>
+
             <MenuButton />
+
           </div>
         </div>
+
             <Menu 
             active = {active}  
             />
         
-
         <div className="App">
-          <div className="title">
-            {/* <h1>FrontEnd Utils </h1> */}
-          </div>
-          <div className="container-buttons">
-            {/* <p>--- boiler ReactJS ---</p> */}
-          </div>
-
           <div className="slider-container">
-          {/* <div className="swiper-container"> */}
-
-              {/* <!-- Additional required wrapper --> */}
-
-              {/* <div className="swiper-wrapper"> */}
-
-                {/* <!-- Slides --> */}
+          
                 <Sliders />
 
-              {/* </div> */}
+          </div>
+        </div>
 
-              {/* <!-- If we need pagination --> */}
-
-              <div className="swiper-pagination"></div>
-
-              {/* <!-- If we need scrollbar --> */}
-
-              <div className="swiper-scrollbar"></div>
-            </div>
-          </div> 
-        {/* </div>  */}
-
-        {/* <!-- If we need navigation buttons --> */}
         <NavSlide />
-        {/* <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div> */}
 
       </div>
+
     </IntroStyle>
   );
 };
