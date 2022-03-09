@@ -1,7 +1,7 @@
 import React from "react";
 
 //import style
-import { NavSlideStyle } from "./navSlide-style";
+import { NavSlideStyle, PNavStyle } from "./navSlide-style";
 
 //import css
 //import './navSlide.css';
@@ -14,14 +14,14 @@ export const NavSlide = () => {
             <div className="nav-container">
                 <div className="navSlideOne">
                     <a href="#slider-1">
-                        <p className="p-number">01</p>
+                        <PNavStyle>01</PNavStyle>
                         <p>Shell Dining Chair</p>
                     </a>
                 </div>
 
                 <div className="navSlideTwo">
                     <a href="#slider-2">
-                        <p className="p-number">02</p>
+                        <PNavStyle>02</PNavStyle>
                         <p>Dunes Anthrazite Black</p>
                     </a>
                 </div>

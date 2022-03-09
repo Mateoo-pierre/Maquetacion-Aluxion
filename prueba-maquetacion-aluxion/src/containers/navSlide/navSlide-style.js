@@ -11,12 +11,6 @@ export const NavSlideStyle = styled.div`
     .navSlideOne{
         margin-right: 50px;
     }
-
-    .p-number{
-        color: rgb(116, 116, 116);
-    }
-
-    
     
 
 
@@ -29,5 +23,11 @@ export const NavSlideStyle = styled.div`
             height: 1px;
         }
     };
+
+`;
+
+export const PNavStyle = styled.p`
+
+    color: rgb(116, 116, 116);
 
 `;

@@ -89,10 +89,12 @@ export const MenuButtonStyle = styled.div`
 
     
     @media  screen and (max-width: 700px){
+
         .container-btn{
             position: absolute;
             margin-left: 74%;
-        }
+        };
+        
     }
 
 `;

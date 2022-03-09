@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 //import style
-import { MenuButtonStyle } from "./menuButtion-style";
+import { MenuButtonStyle } from "./menuButton-style";
 
 //import css
 import './menuButton.css'

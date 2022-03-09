@@ -13,7 +13,9 @@ export const Menu = ({active}) => {
                         <div className="bg1">
                             <ul>
                                 <li className="li-furniture">Furniture</li>
-                                <div className="bg1-forniture"></div>
+                                <div className="bg1-forniture">
+                                    <div className="img"></div>
+                                </div>
                                 <li>Lighting</li>
                                 <li>Accessories</li>
                             </ul>

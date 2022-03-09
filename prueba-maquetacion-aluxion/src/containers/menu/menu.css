@@ -84,7 +84,7 @@
     margin-bottom: 100px;
 }
 
-.bg1-forniture{
+.img{
     position: absolute;
     width: 100%;
     height: 320px;
@@ -98,7 +98,7 @@
     transition: 1s ease-in-out;
 }
 
-.li-furniture:hover ~ .bg1-forniture{
+.li-furniture:hover ~ .img{
     opacity: 1;
     transform: translateY(0%);
     transition: 1s ease-in-out;
@@ -113,4 +113,50 @@
 
 @media screen and (max-width : 700px ) {
    
+    .ul{
+        opacity: 0;
+        transform: translateY(100%);
+        position: absolute;
+        left: 10%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        width: 300px;
+        top: 25%;
+        flex-direction: column;
+    
+    }
+
+    .ul-translate{
+        opacity: 1;
+        transform: translateY(0%);
+        transition: 3s;
+    }
+
+    .bg1{
+        position: absolute;
+        color: rgba(255, 255, 255, 0.568);
+        font-size: 13px;
+        opacity: 0;
+        text-align: center;
+        left: -8%;
+        width: 350px;
+        transform: translateY(-60%);
+        transition: 1s ease-in-out;
+    }
+
+    .img {
+        position: absolute;
+        width: 100%;
+        height: 320px;
+        mix-blend-mode: difference;
+        top: 0%;
+        left: 0px;
+        background-size: cover;
+        opacity: 0;
+        transform: translateY(15%);
+        transition: 1s ease-in-out;
+    }
+
 }
