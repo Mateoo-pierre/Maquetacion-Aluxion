@@ -112,6 +112,7 @@
     
 
     .divButton {
+        margin-top: 10px;
         margin-left: -10%;
         position: relative;
         justify-content: center;
@@ -128,6 +129,10 @@
         background-color: black;
         font-weight: 500;
     }
+
+    .slider-2{
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width : 380px){
@@ -140,4 +145,5 @@
         margin-left: -10%;    
         top: 20px;
     }
+    
 }
