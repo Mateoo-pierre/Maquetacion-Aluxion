@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { logoBlack, logoWhite } from "../../assets/images/images";
 import { IntroStyle } from "./intro-style";
-import Swiper from "swiper";
+// import Swiper from "swiper";
 import "swiper/css/swiper.css";
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ import { MenuButton } from "../menu button/menuButton";
 import { Menu } from "../menu/menu";
 
 const Intro = () => {
-  let mySwiper: any = null;
+  // let mySwiper: any = null;
 
   const [active, setActive] = useState(false);
 
@@ -21,7 +21,7 @@ const Intro = () => {
     <IntroStyle>
       <div className={`header ${active ? "active" : ""}`}>
         <div className="logo">
-          <a href="https://aluxion.com/#home" target="_blank">
+          <a href="https://aluxion.com/#home" target="_blank" rel="noopener noreferrer">
           <img src={active ? logoWhite: logoBlack} alt="logo Aluxion" className="logoAluxion" />
           Aluxion
             </a>
@@ -32,7 +32,7 @@ const Intro = () => {
       </div>
           <Menu 
           active = {active}  
-         />
+        />
       
 
       <div className="App">

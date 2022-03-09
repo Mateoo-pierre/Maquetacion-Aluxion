@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const IntroStyle = styled.div`
   background: white;
-  margin-left: 200px;
+  margin-left: 15%;
   
   
   .logo{
@@ -10,6 +10,8 @@ export const IntroStyle = styled.div`
     font-family: 'Roboto Condensed', sans-serif;
     z-index: 3;
     transition: 0.5s ease-in-out;
+    text-decoration: none;
+
   }
 
   .logoAluxion {
@@ -29,8 +31,18 @@ export const IntroStyle = styled.div`
       .logo {
         color: white;
         transition: 1.5s ease-in-out;
+        text-decoration: none;
       }
     }
+  }
+
+  @media (max-width : 700px){
+
+    .logo{
+      width: 100%;
+      position: fixed ;
+    }
+
   }
   
 `;

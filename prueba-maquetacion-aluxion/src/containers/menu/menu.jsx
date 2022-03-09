@@ -7,9 +7,9 @@ export const Menu = ({active}) => {
     return(
         <>  
             <div className={`menu ${active ? 'open' : ''}`}>
-                <ul className="ul">
+                <ul className={`ul ${active ? 'ul-translate' : ''}`}>
                     <div className="collect-container">
-                        <li className="li1 li"><a href="#">Collection</a></li>
+                        <li className="li1 li"><p >Collection</p></li>
                         <div className="bg1">
                             <ul>
                                 <li className="li-furniture">Furniture</li>
@@ -19,9 +19,9 @@ export const Menu = ({active}) => {
                             </ul>
                         </div>
                     </div>
-                    <li className="li2 li"><a href="#">Desing</a></li>
-                    <li className="li3 li"><a href="#">Craftmanship</a></li>
-                    <li className="li4 li"><a href="#">Ethics</a></li>
+                    <li className="li2 li"><p href="#">Desing</p></li>
+                    <li className="li3 li"><p href="#">Craftmanship</p></li>
+                    <li className="li4 li"><p href="#">Ethics</p></li>
                 </ul>
             </div>
         </>

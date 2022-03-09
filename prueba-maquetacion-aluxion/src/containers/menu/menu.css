@@ -18,23 +18,30 @@
 }
 
 .ul{
+    opacity: 0;
+    transform: translateY(100%);
     position: absolute;
     left: 200px;
     display: flex;
     width: 300px;
     top: 25%;
     flex-direction: column;
-    
+
+}
+
+.ul-translate{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: 3s;
 }
 
 .ul li{
     margin: 20px 0;
     z-index: 11;
     transition: 1s ease-in-out;
-
 }
 
-.ul li a{
+.ul li p{
     text-decoration: none;
     transition: 2s;
     font-size: 25px;
@@ -98,4 +105,11 @@
 
 .li-furniture:hover{
     color: white;
+}
+
+
+/*responsive css*/
+
+@media screen and (max-width : 700px ) {
+   
 }
