@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const IntroStyle = styled.div`
-  background: white;
-  margin-left: 15%;
+
+  .bodyIntro{ 
+    background: white;
+    margin-left: 15%;
+  }
   
   
   .logo{
@@ -23,6 +26,7 @@ export const IntroStyle = styled.div`
     border: 1px solid white;
     padding: 20px 0px;
     color: black;
+    width: 90%;
     display: flex;
 
     
@@ -37,6 +41,10 @@ export const IntroStyle = styled.div`
   }
 
   @media (max-width : 700px){
+
+    .bodyIntro{ 
+      margin-left: 8%;
+    }
 
     .logo{
       width: 100%;
