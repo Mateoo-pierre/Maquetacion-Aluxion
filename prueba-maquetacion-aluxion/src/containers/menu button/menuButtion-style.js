@@ -85,7 +85,7 @@ export const MenuButtonStyle = styled.div`
     }
 
 
-    `/* responsive */ `
+    
 
     
     @media  screen and (max-width: 700px){

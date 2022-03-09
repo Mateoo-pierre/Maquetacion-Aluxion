@@ -17,7 +17,7 @@ export const NavSlideStyle = styled.div`
     }
 
     
-    `/* responsive */`
+    
 
 
     @media screen and (max-width : 700px ){
