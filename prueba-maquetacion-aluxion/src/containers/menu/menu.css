@@ -1,4 +1,4 @@
-.menu{
+/* .menu{
     position: fixed;
     top: 0;
     left: 0;
@@ -15,9 +15,9 @@
     opacity: 1;
     background-color: black;
     transform: translateX(0%);
-}
+} */
 
-.ul{
+/* .ul{
     opacity: 0;
     transform: translateY(100%);
     position: absolute;
@@ -26,16 +26,15 @@
     width: 300px;
     top: 25%;
     flex-direction: column;
+} */
 
-}
-
-.ul-translate{
+/* .ul-translate{
     opacity: 1;
     transform: translateY(0%);
     transition: 3s;
-}
+} */
 
-.ul li{
+/* .ul li{
     margin: 20px 0;
     z-index: 11;
     transition: 1s ease-in-out;
@@ -48,16 +47,16 @@
     font-weight: 550;
     mix-blend-mode: difference;
     cursor: pointer;
-}
+} */
 
 
-.collect-container{
+/* .collect-container{
     z-index: 5;
     transition: 1s ease-in-out;
     width: 150px;
-}
+} */
 
-.bg1{
+/* .bg1{
     position: absolute;
     color: rgba(255, 255, 255, 0.568);
     font-size: 13px;
@@ -70,10 +69,23 @@
 .bg1 li{
     margin: 15px 0;
     cursor: pointer;
+} */
+
+.bg1-forniture{
+    background: url(../../assets/images/files/Sofá\ blanco.png);
+    /* position: absolute;
+    width: 100%;
+    height: 320px;
+    mix-blend-mode: difference;
+    top: -50px;
+    left: 450px; */
+    /* background-size: cover;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 1s ease-in-out; */
 }
 
-
-.collect-container:hover > .bg1{
+/* .collect-container:hover > .bg1{
     opacity: 1;
     transform: translateY(0%);
     transition: 1s ease-in-out;
@@ -84,19 +96,6 @@
     margin-bottom: 100px;
 }
 
-.bg1-forniture{
-    position: absolute;
-    width: 100%;
-    height: 320px;
-    mix-blend-mode: difference;
-    top: -50px;
-    left: 450px;
-    background: url(../../assets/images/files/Sofá\ blanco.png);
-    background-size: cover;
-    opacity: 0;
-    transform: translateY(20%);
-    transition: 1s ease-in-out;
-}
 
 .li-furniture:hover ~ .bg1-forniture{
     opacity: 1;
@@ -106,12 +105,12 @@
 
 .li-furniture:hover{
     color: white;
-}
-
-
+} */
+    
+    
 /*responsive css*/
 
-@media screen and (max-width : 700px ) {
+/* @media screen and (max-width : 700px ) {
    
     .ul{
         opacity: 0;
@@ -153,4 +152,4 @@
         margin-top: 10px;
     }
 
-}
+} */
