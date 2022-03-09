@@ -9,7 +9,7 @@ export const Menu = ({active}) => {
             <div className={`menu ${active ? 'open' : ''}`}>
                 <ul className={`ul ${active ? 'ul-translate' : ''}`}>
                     <div className="collect-container">
-                        <li className="li1 li"><p >Collection</p></li>
+                        <li className="li1 li"><p>Collection</p></li>
                         <div className="bg1">
                             <ul>
                                 <li className="li-furniture">Furniture</li>

@@ -5,6 +5,7 @@ export const IntroStyle = styled.div`
   .bodyIntro{ 
     background: white;
     margin-left: 15%;
+    height: 100vh;
   }
   
   
