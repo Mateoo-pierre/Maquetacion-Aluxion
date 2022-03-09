@@ -12,7 +12,28 @@ export const NavSlideStyle = styled.div`
         margin-right: 50px;
     }
     
+    @media screen and (max-width : 1000px ){
 
+        .nav-container{
+            margin-left: -4%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8%;
+            height: 1px;
+        }
+
+        .navSlideOne{
+            margin-right: 10px;
+            border: 1px solid black;
+            padding: 12px 100px;
+        }
+
+        .navSlideTwo{
+            border: 1px solid black;
+            padding: 12px 100px;
+        }
+
+    };
 
     @media screen and (max-width : 700px ){
         .nav-container{
@@ -22,7 +43,20 @@ export const NavSlideStyle = styled.div`
             margin-top: 16%;
             height: 1px;
         }
+
+        .navSlideOne{
+            margin-right: 50px;
+            border: none;
+            padding: 0;
+        }
+
+        .navSlideTwo{
+            border: none;
+            padding: 0;
+        }
     };
+
+
 
 `;
 

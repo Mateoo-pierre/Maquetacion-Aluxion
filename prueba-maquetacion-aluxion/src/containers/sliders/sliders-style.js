@@ -155,8 +155,27 @@ export const ButtonOne = styled.div`
         font-weight: 500;
     }
 
+    
+    @media screen and (max-width : 1000px ) {
 
+        .divButton {
+            margin-top: 10px;
+            margin-left: -5%;
+            position: relative;   
+            top: -100px;
+        }
+        
+        .divButton button{
+            cursor: pointer;
+            padding: 10px 35%;
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            font-weight: 500;
+        }
 
+    }
+    
     @media screen and (max-width : 700px ) {
 
         .divButton {
@@ -180,25 +199,6 @@ export const ButtonOne = styled.div`
     }
 
 
-    @media screen and (max-width : 1000px ) {
-
-        .divButton {
-            margin-top: 10px;
-            margin-left: -5%;
-            position: relative;   
-            top: -100px;
-        }
-        
-        .divButton button{
-            cursor: pointer;
-            padding: 10px 35%;
-            border: 1px solid black;
-            color: white;
-            background-color: black;
-            font-weight: 500;
-        }
-
-    }
 
 
     @media screen and (max-width : 380px){

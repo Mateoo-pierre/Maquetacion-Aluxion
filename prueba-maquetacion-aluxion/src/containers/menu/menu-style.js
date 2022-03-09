@@ -110,7 +110,41 @@ export const MenuStyle = styled.div`
         color: white;
     }
 
-    
+    @media screen and (max-width : 1000px){
+
+        .ul{
+            opacity: 0;
+            transform: translateY(100%);
+            position: absolute;
+            left: 10%;
+            text-align: left;
+            display: flex;
+            width: 300px;
+            top: 20%;
+            flex-direction: column;
+        }
+
+        .ul-translate{
+            opacity: 1;
+            transform: translateY(0%);
+            transition: 3s;
+        }
+
+        .bg1-forniture{
+            position: absolute;
+            width: 100%;
+            height: 320px;
+            mix-blend-mode: difference;
+            top: -50px;
+            left: 330px;
+            background: url(../../assets/images/files/Sofá\ blanco.png);
+            background-size: cover;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: 1s ease-in-out;
+        }
+
+    }
 
     @media screen and (max-width : 700px ) {
    
